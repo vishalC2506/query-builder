@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Filter from "./Filter";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
-import { useDispatch } from "react-redux";
+
 import { logicActions } from "../Redux/features/logicSlice";
 import store from "../Redux/store";
 
