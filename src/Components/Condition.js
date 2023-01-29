@@ -7,13 +7,13 @@ import { logicActions } from "../Redux/features/logicSlice";
 import store from "../Redux/store";
 
 const Condition = () => {
-  const [checked, setChecked] = useState(false);
+
   const [radioValue, setRadioValue] = useState("&&");
   const radios = [
     { name: "AND", value: "&&" },
     { name: "OR", value: "||" },
   ];
-  const dispatch = useDispatch();
+ 
 
   return (
     <div className=" border-2 absolute  top-1/4 w-3/4 inset-x-20 border-gray-400 shadow-lg">

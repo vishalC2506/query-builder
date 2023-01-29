@@ -19,13 +19,13 @@ export const filterSlice = createSlice({
   },
   reducers: {
     filtersField(state, action) {
-      {
+      
         if (state.setField) {
           state.query[state.FieldCount].Field = [
             ...state.query[state.FieldCount].Field,
             action.payload,
           ];
-        }
+        
       }
       state.setField = false;
     },

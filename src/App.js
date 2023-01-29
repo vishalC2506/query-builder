@@ -24,7 +24,7 @@ const App = () => {
           {submit ? (
             <div className="text-white ml-8 font-mono opacity-60 text-sm">
               {Query.map((e, i) => {
-                if (Query.length == 1) {
+                if (Query.length === 1) {
                  return <span>{`${e.Field} ${e.Condition} ${e.Criteria}`}</span>;
                 } else if (Query.length === i + 1) {
                   return <span>{`${e.Field} ${e.Condition} ${e.Criteria}`}</span>;
